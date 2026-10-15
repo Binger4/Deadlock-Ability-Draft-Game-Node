@@ -1,0 +1,9 @@
+<Project><ItemGroup>
+    <SharedSource Include="$(MSBuildThisFileDirectory)Contracts/AbilityDraft.Contracts.csproj" ExpectedHash="3472FCCCE5613343D3B55F6C2BBC48CBFD3DE01F9CF32FD8607B8AC3A7E26395" />
+    <SharedSource Include="$(MSBuildThisFileDirectory)Contracts/DraftContracts.cs" ExpectedHash="444FA94262B17B27877349431E6BF575E39CAC0504970F576D967D9ABF896A0A" />
+    <SharedSource Include="$(MSBuildThisFileDirectory)Contracts/GameNodeContracts.cs" ExpectedHash="0BBDCCC821965EF89D43D918AA4A7ABDDC0769743A19CF77E61A519128ED8B1E" />
+    <SharedSource Include="$(MSBuildThisFileDirectory)Contracts/RuntimePlayerId.cs" ExpectedHash="96F764A2FD6B6E6647E934810F6D7B579DC6378A782716A6123325FA9619D06D" />
+    <SharedSource Include="$(MSBuildThisFileDirectory)MatchHosting/AbilityDraft.MatchHosting.csproj" ExpectedHash="59C23884DC8296CFABB283C7091798C43FB06DE57B9A39B60C7752C860C40B20" />
+    <SharedSource Include="$(MSBuildThisFileDirectory)MatchHosting/DeadworksMatchWorkerHost.cs" ExpectedHash="F74D01D0BBBE6A3DC80C8A4C2C463D8EB58D7C1EEDED71AE3B5E2D627E7BD9F2" />
+    <SharedSource Include="$(MSBuildThisFileDirectory)MatchHosting/MatchWorkers.cs" ExpectedHash="16162452A1EC4824BFD786CF7C4E39534AB4EDCDEA23F34882AA5930222C7066" />
+</ItemGroup></Project>

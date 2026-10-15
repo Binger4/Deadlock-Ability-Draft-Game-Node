@@ -1,0 +1,2 @@
+# Snapshot hashes are computed over canonical LF, including on Windows clones.
+Shared/** text eol=lf

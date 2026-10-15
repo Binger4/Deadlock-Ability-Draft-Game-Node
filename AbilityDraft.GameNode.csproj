@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup><TargetFramework>net10.0</TargetFramework><Nullable>enable</Nullable><ImplicitUsings>enable</ImplicitUsings><Version>1.0.0</Version></PropertyGroup>
+  <Import Project="Shared/Snapshot.props" />
+  <Target Name="VerifySharedSnapshot" BeforeTargets="BeforeBuild">
+    <GetFileHash Files="@(SharedSource)" Algorithm="SHA256"><Output TaskParameter="Items" ItemName="VerifiedSource" /></GetFileHash>
+    <Error Condition="'%(VerifiedSource.FileHash)' != '%(VerifiedSource.ExpectedHash)'" Text="Shared source drift: %(VerifiedSource.Identity). Run MAIN's Integration/Sync-GameNodeShared.ps1." />
+  </Target>
+  <ItemGroup>
+    <Compile Remove="Shared/**;Tests/**" /><Content Remove="Shared/**;Tests/**" /><None Remove="Shared/**;Tests/**" />
+    <ProjectReference Include="Shared/MatchHosting/AbilityDraft.MatchHosting.csproj" />
+  </ItemGroup>
+</Project>
