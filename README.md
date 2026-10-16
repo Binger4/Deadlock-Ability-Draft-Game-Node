@@ -1,6 +1,6 @@
 # Ability Draft Game Node
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 Runs Deadlock Ability Draft matches on a separate machine. [MAIN](https://github.com/Binger4/Deadlock-Ability-Draft) hosts the website and drafts, then sends each completed roster to the selected node. Players connect directly to that node's game port.
 
